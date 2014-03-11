@@ -3,11 +3,9 @@
 //// Main file
 // Initialize session
 session_start();
-
 // Initialize some vars
 $loggedIn = isset( $_SESSION['login'] );
 global $loggedIn;
-
 ?>
 
 <!DOCTYPE html>
@@ -22,8 +20,8 @@ global $loggedIn;
 	<body>
 		<!-- Logo bar -->
 		<div class="logo">
-			<img class="imglogo" src="res/HSWRO-logo.png"/>
 			<a href="index.php" class="textlogo">HSLib</a>
+			<img class="imglogo" src="res/HSWRO-logo.png"/>
 		</div>
 
 		<!-- Menu bar -->
@@ -31,8 +29,13 @@ global $loggedIn;
 			<ul>
 				<li><a href="index.php">Home</a></li>
 				<li><a href="booklist.php">Booklist</a></li>
-				<li class="login"><a href="login.php">Login</a></li>
-			</ul>
+				<?php
+					if( $loggedIn )
+						echo '<li class="login"><a href="panel.php">User panel</a></li>';
+					else
+						echo '<li class="login"><a href="login.php">Login/Register</a></li>';
+				?>
+				</ul>
 		</div>
 
 		<!-- Content -->
@@ -42,7 +45,7 @@ global $loggedIn;
 		
 		<!-- Footer -->
 		<div class="footer">
-			<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/4.0/80x15.png" /></a><br />This work by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">jesusthekiller</span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+			This work by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">jesusthekiller</span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
 		</div>
 	</body>
 </html>
