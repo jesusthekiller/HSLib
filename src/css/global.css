@@ -1,0 +1,122 @@
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	border: 0;
+}
+
+div.logo {
+	display: block;
+
+	width: calc( 100% - 20px );
+	height: 100px;
+	margin: 10px;
+
+	background: #bbb;
+}
+
+img.imglogo {
+	display: block;
+	margin: 10px;
+	float: right;
+}
+
+.textlogo {
+	display: block;
+	margin: 10px;
+	float: left;
+	height: 80px;
+
+	vertical-align: center;
+
+	font-size: 80px;
+	font-family: monospace;
+	font-weight: normal;
+	text-decoration: none;
+	color: black;
+}
+
+.textlogo:hover {
+	/*-moz-transform: scaleY(-1);
+	-o-transform: scaleY(-1);
+	-webkit-transform: scaleY(-1);
+	transform: scaleY(-1);
+	filter: FlipV;
+	-ms-filter: "FlipV";*/
+}
+
+div.menu {
+	display: block;
+	margin: 10px;
+	height: 40px;
+	width: calc( 100% - 20px );
+	
+	background: #bbb;
+}
+
+div.menu ul {
+	display: block;
+	margin: 0;
+	border: 0;
+	padding: 0;
+	height: 100%;
+
+	list-style: none;
+}
+
+div.menu ul li {
+	display: block;
+	float: left;
+	padding: 0;
+	height: 100%;
+	margin: 0;
+}
+
+div.menu ul li a {
+	display: block;
+	position: relative;
+	padding: 8px 15px 12px;
+	height: 100%;
+	
+	font-size: 20px;
+	font-weight: 0;
+	vertical-align: middle;
+	text-decoration: none;
+	font-family: monospace;
+	color: black;
+}
+
+div.menu ul li a:hover {
+	color: white;
+}
+
+div.menu ul li.login {
+	float: right;
+}
+
+div.content {
+	margin: 10px;
+	padding: 10px;
+	height: 100%;
+	width: calc( 100% - 42px ); /* margin + padding + border */
+	
+	border: 1px dashed #999;
+	background: #eee;
+}
+
+div.footer {
+	display: block;
+	margin: 10px;
+	padding: 0;
+	width: calc( 100% - 20px );
+
+	text-align: center;
+	font-style: italic;
+	font-family: serif;
+	font-size: 12px;
+	color: #bbb;
+}
+
+div.footer a {
+	color: #bbb;
+}
