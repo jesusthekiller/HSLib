@@ -45,7 +45,7 @@ global $loggedIn;
 		
 		<!-- Footer -->
 		<div class="footer">
-			This work by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">jesusthekiller</span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+			This work by <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/jesusthekiller/HSLib" property="cc:attributionName" rel="cc:attributionURL">jesusthekiller</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
 		</div>
 	</body>
 </html>
